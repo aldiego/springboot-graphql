@@ -1,0 +1,16 @@
+spring:
+  application:
+    name:
+  datasource:
+    url: ${DATABASE_URL}
+    username: ${DATABASE_USER}
+    password: ${DATABASE_PASSWORD}
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+    hibernate.ddl-auto: update
+graphql:
+  graphiql:
+    enabled: true
